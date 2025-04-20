@@ -1,0 +1,99 @@
+.product-detail-page {
+  background: #f5f7fa; /* Match Figma background color */
+}
+
+.product-detail {
+  padding: 5rem 5%;
+  text-align: center;
+}
+
+.product-detail h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 2rem;
+  text-transform: uppercase; /* Match Figma typography */
+}
+.icon {
+  width: 30px;
+  height: 30px;
+}
+.icon:hover {
+  /* transform: translate3d(0, -5px, 0); */
+  transform: translateX(5px) rotate(30deg);
+}
+.product-detail-content {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.product-detail-text {
+  max-width: 500px;
+  text-align: left;
+}
+
+.product-overview,
+.product-features {
+  margin-bottom: 2rem;
+}
+
+.product-overview h3,
+.product-features h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.product-overview p,
+.product-features p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.product-detail-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px; /* Rounded corners as in Figma */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.back-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 8px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #00c4b4; /* Button color from Figma */
+  border: 1px solid #00c4b4;
+  border-radius: 20px; /* Rounded button */
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.back-btn:hover {
+  background: #00c4b4;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .product-detail h2 {
+    font-size: 2rem;
+  }
+
+  .product-overview h3,
+  .product-features h3 {
+    font-size: 1.3rem;
+  }
+
+  .product-detail-image img {
+    max-width: 100%;
+  }
+}

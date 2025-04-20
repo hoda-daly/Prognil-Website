@@ -1,0 +1,92 @@
+.error-page {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+
+  padding: 20px;
+}
+
+.error-container {
+  background-image: url("../assets/404.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+
+  width: 90%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.error-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.error-description {
+  font-size: 1rem;
+  color: #666;
+  margin: 20px 0;
+  line-height: 1.5;
+}
+
+.go-back-button {
+  background: linear-gradient(179.22deg, #15cc70 -29.44%, #026bd3 99.33%);
+
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.go-back-button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .error-container {
+    padding: 30px;
+  }
+
+  .error-title {
+    font-size: 2rem;
+  }
+
+  .error-description {
+    font-size: 0.9rem;
+  }
+
+  .go-back-button {
+    padding: 8px 25px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .error-container {
+    padding: 20px;
+  }
+
+  .error-title {
+    font-size: 1.5rem;
+  }
+
+  .error-description {
+    font-size: 0.85rem;
+  }
+
+  .error-image {
+    max-width: 300px;
+  }
+}

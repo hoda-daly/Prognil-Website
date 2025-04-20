@@ -1,0 +1,96 @@
+.products-page {
+  background: #f5f7fa;
+}
+
+.products {
+  padding: 5rem 8%;
+}
+
+.products h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 2.5rem;
+  text-transform: capitalize;
+  /* text-align: center; Added to match Figma design */
+}
+
+.filter-bar {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+  /* justify-content: center;  */
+}
+
+.filter-bar button {
+  padding: 12px 22px;
+  border: 1px solid #d3d3d3;
+  background: #fff;
+  border-radius: 20px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #1a1a1a;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.filter-bar button.active {
+  background: linear-gradient(180deg, #15cc70 -34.62%, #026bd3 100%);
+  color: #fff;
+  border: none;
+}
+
+.filter-bar button:hover {
+  background: linear-gradient(180deg, #15cc70 -34.62%, #026bd3 100%);
+  color: #fff;
+}
+
+.products-grid {
+  display: flex; /* Using flex as per your modification */
+  gap: 4rem;
+  /* justify-items: center; */
+  /* justify-content: center; / */
+  flex-wrap: wrap; /* Ensure cards wrap on smaller screens */
+}
+
+/* Animation for the heading */
+.animate-heading {
+  animation: scaleUp 0.5s ease-in-out forwards;
+}
+
+/* Animation for the cards */
+.animate-card {
+  animation: scaleUp 0.5s ease-in-out forwards;
+  animation-delay: 0s; /* Slight delay for a staggered effect */
+}
+
+/* Keyframes for scaling animation */
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .products h2 {
+    font-size: 2rem;
+  }
+
+  .filter-bar {
+    gap: 0.5rem;
+  }
+
+  .filter-bar button {
+    padding: 8px 16px;
+  }
+
+  .products-grid {
+    gap: 2rem; /* Reduce gap on smaller screens */
+  }
+}
