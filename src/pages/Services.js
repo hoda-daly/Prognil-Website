@@ -27,7 +27,7 @@ const Services = () => {
     const fetchServices = async () => {
       try {
         const response = await fetch(
-          'http://prognil.runasp.net/api/Services?page=1&NumberOfItems=12',
+          'https://prognil.runasp.net/api/Services?page=1&NumberOfItems=12',
           {
             method: 'GET',
             headers: {

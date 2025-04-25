@@ -17,7 +17,7 @@ const ProductDetail = () => {
     const fetchProduct = async () => {
       try {
         const response = await fetch(
-          `http://prognil.runasp.net/api/Products/id =${productId}`,
+          `https://prognil.runasp.net/api/Products/id =${productId}`,
           {
             method: 'GET',
             headers: {

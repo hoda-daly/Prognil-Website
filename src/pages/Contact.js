@@ -31,7 +31,7 @@ const Contact = () => {
     setSubmitStatus(null);
 
     try {
-      const response = await fetch('http://prognil.runasp.net/api/Contacts', {
+      const response = await fetch('https://prognil.runasp.net/api/Contacts', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
