@@ -7,6 +7,7 @@ import Products from "./pages/Products";
 import ProductDetail from "./pages/ProductDetail";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import FAQSection from "./components/FAQSection";
 import "./styles/global.css";
 import Loading from "./components/Loading";
 
@@ -22,6 +23,7 @@ const App = () => {
           <Route path="/products" element={<Products />} />
           <Route path="/products/:productId" element={<ProductDetail />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/faq" element={<FAQSection />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
